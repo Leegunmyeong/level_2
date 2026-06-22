@@ -1,0 +1,122 @@
+/* 선택자 {속성:값;} */
+h1 {
+    text-align: center;
+    color: rgb(22, 223, 250);
+}
+
+dl{
+    background-color: rgb(218, 218, 155);
+}
+
+dt {
+    background-color: red; color: white;
+}
+
+dd {
+    color: red;
+}
+
+ul {
+    background-color: black;
+}
+
+li {
+    color: yellow;
+}
+
+ol {/* 태그 순서 생각하며 똑같은 선택자 또 쓰지 않기 */
+    background-color: blueviolet;
+}
+
+h3 {
+    background-color: rgb(20, 247, 216);
+    color: white;
+}
+
+em {
+    color: darkblue;
+    background-color: bisque;
+}/* 태그의 인라인, 블록 유형에 따라 적용 결과가 다를 수 있다. */
+/* 블록태그 h3은 배경색이 1행이 전체에 적용되고 em은 인라인이라서 em이 가진 글자만큼 적용된다. */
+
+header { /* 보모가 상속시킨 color가 a에 적용되지 않는 이유? */
+    background-color: black;
+    color: aqua;
+}/* 실제론 적용됐으나 a태그에 기본적으로 내장된 파랑색이 상속된 값을 덮어서 보이지 않는다 */
+
+a {
+    background-color: blueviolet;
+    color: white;
+}/* a태그는 블록, 인라인 모두 가능하나 css상으론 처음
+    a태그가 발표됐을 때의 초기모습(인라인)을 가지고
+    있다 (나중에 블록형태로 CSS도 변경가능 */
+
+section {
+    background-color: aqua;
+}
+
+.news > h4 {
+    background-color: blueviolet;
+    color: white;
+}
+
+.news > span {
+    background-color: beige;
+    color: blue;
+}
+
+.blog > h4 {
+    background-color: brown;
+    color: aqua;
+}
+
+.blog > span {
+    color: blue;
+    background-color: black;
+}
+/* 태그가 2개 이상 반복될때 구분하는 클래스선택자 */
+
+.study {
+    background-color: aquamarine;
+}
+
+.study > .first {
+    color: azure;
+    background-color: blue;
+}
+
+.study > .second {
+    background-color: black;
+    color: rgb(186, 219, 248);
+}/* 디자인하는 선택자에 부모가 있으면 부모까지 같이 써줘야한다 */
+
+.study > li {
+    color: rgb(221, 99, 99);
+}
+.study > li > del {
+    color: rgb(9, 65, 129);
+}
+
+footer {
+    background-color: aqua;
+}
+
+footer > address {
+    color: rgb(11, 20, 11);
+}
+
+footer > .copy {
+    color: rgb(95, 82, 107);
+    background-color: black;
+}
+
+footer > p > span {
+    color: rgb(70, 255, 33);
+}
+footer > p > em {
+    color: rgb(72, 199, 250);
+}
+
+footer > p {
+    color: rgb(255, 0, 0);
+}
