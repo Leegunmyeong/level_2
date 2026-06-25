@@ -1,0 +1,87 @@
+#movie2 {
+    width: 600px;
+    height: max-content;
+    background-color: #0a0a0a;
+    padding: 40px 15px 40px 15px;
+    border-radius: 25px;
+}
+
+#movie2 > .poster2 {
+    
+}
+
+#movie2 > .poster2 > img {
+    margin: 0 0 40px 0;
+}
+
+#movie2 > .title_old {
+    display: flex;
+}
+
+#movie2 > .title_old > h1 {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.2;
+    margin: 0 0 40px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+#movie2 > .open_time_category {
+    margin-bottom: 40px;
+}
+
+
+#movie2 > .open_time_category > span {
+    color: #fff;
+}
+
+#movie2 > .open_time_category > span + span::before {
+    content: "";
+    display: inline-block;
+    width: 1px; /* 선 두께 */
+    height: 16px; /* 선 높이 */
+    background-color: #ccc; /* 선색상 */
+    margin: 0 20px; /* 선 좌우 간격 (여백) */
+    vertical-align: middle; /* 글자 높낮이 맞추기 */
+}
+
+
+#movie2 > .prolog_contents {
+    
+}
+
+#movie2 > .prolog_contents > h2 {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin: 0 0 40px 0;
+}
+
+#movie2 > .prolog_contents > .contents_first_line {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 40px 0;
+}
+
+#movie2 > .prolog_contents > .contents_second_line {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 40px 0;
+}
+
+#movie2 > .prolog_contents > .contents_three_line {
+    font-family: 'Noto Sans KR', '맑은 고딕';
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
